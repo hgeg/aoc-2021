@@ -24,7 +24,7 @@ part2 = undefined
 type Part = Input -> Output
 
 readInput :: IO (Input)
-readInput = (decode . lines) <$> readFile "input"
+readInput = decode <$> readFile "input"
     where decode = undefined
 
 run :: Part -> Input -> IO ()
